@@ -1,0 +1,436 @@
+#cocc-leftnav {
+  display: none;
+}
+
+.hide {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  background: transparent;
+  color: transparent;
+}
+
+/* Top Right Menu */
+
+#top_wrapper {
+  flex-wrap: wrap-reverse;
+}
+
+h1 {
+  flex: 1 1 auto;
+}
+
+#top_right_menu {
+  flex: 1 1 auto;
+  text-align: right;
+}
+
+#top_right_menu a {
+  display: inline-block;
+  margin-bottom: .5rem;
+  text-decoration: none;
+  padding: .5rem .5rem .5rem 1.85rem;
+  border: 1px solid #ccc;
+  border-radius: .25rem;
+  color: #333;
+  font-size: 90%;
+  background-position: .25rem center;
+  background-repeat: no-repeat;
+}
+
+#get_help {
+  background: #9d8ebd;
+  background-image: url('images/icons/help-black.png');
+}
+
+#atoz {
+  background: #899db7;
+  background-image: url('images/icons/atoz.png');
+}
+
+#feedback {
+  background-image: url('images/icons/controversy-24px.png');
+}
+
+/* Search Form */
+
+#bento-search {
+  margin: 0 .5rem .5rem .5rem;
+  padding: .5rem;
+  display: flex;
+  background: #eef2f8;
+}
+
+#bento-search input {
+  padding: .17rem .25rem;
+}
+
+#bento-search input[type="text"] {
+  flex: 1 1 auto;
+}
+
+#bento-search input[type="submit"] {
+  background-image: url('https://barber.cocc.edu/images/magnifying-glass.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: transparent;
+  flex: 0 0 2rem;
+  max-width: 2rem;
+}
+
+/* Did You Mean */
+#dym_box,
+#db_by_name_box {
+  display: none;
+  background: #ffffcc;
+  border: none;
+  box-shadow: .25rem .25rem .25rem #ccc;
+}
+
+/* Tabs */
+
+#tabs {
+  display: block;
+  margin: 1rem .5rem .5rem .5rem;
+  padding: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+#tabs li {
+  display: inline-block;
+  margin: 0 .5rem 0 0;
+}
+
+#tabs li a {
+  display: block;
+  padding: .25rem .5rem;
+  background: #eee;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+  text-decoration: none;
+  color: #333;
+  font-size: 110%;
+}
+
+#tabs a:hover {
+  background: #f9f9f9;
+}
+
+#tabs li.active a {
+  background: #ddeeff;
+  border-color: #ccddee;
+}
+
+/* Databases by Name */
+#db_by_name_box {
+  display: none;
+  background: #E6EFFA;
+  border: none;
+  box-shadow: .25rem .25rem .25rem #ccc;
+}
+
+#db_by_name_box .label {
+  display: none;
+}
+
+/* Credo Topics */
+
+#topic_pages {
+  display: none;
+}
+
+#credo_topics {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.topic {
+  flex: 0 1 450px;
+  display: flex;
+  flex-wrap: wrap;
+  background: #E6EFFA;
+  border: 1px solid #b9c6d7;
+  margin: .5rem;
+  padding: 0;
+}
+
+.topic div.pic {
+  flex: 1 1 auto;
+  padding: .5rem 0;
+}
+
+.topic div.pic img {
+  display: block;
+  margin: 0 auto;
+}
+
+.topic div.text {
+  flex: 1 1 300px;
+  padding: .5rem 0;
+}
+
+.topic p {
+  font-size: 90%;
+}
+
+.topic p.topic_header {
+  margin: 0 1rem .25rem 1rem;
+  font-weight: bold;
+  color: #c54599;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.topic p.topic_header img {
+  vertical-align: middle;
+}
+
+.topic h3 {
+  margin: 0 1rem;
+}
+
+.topic h3 a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Recommendations */
+#recommended_resources {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.recommendation {
+  flex: 0 1 350px;
+  display: flex;
+  font-size: 90%;
+  background: #eee;
+  border: 1px solid #ccc;
+  padding: .5rem;
+  margin: .5rem;
+  text-decoration: none;
+  color: #333;
+}
+
+.recommendation img {
+  flex: 0 0 auto;
+  height: 40px;
+  margin-right: .5rem;
+}
+
+.recommendation p {
+  flex: 1 1 auto;
+  margin: 0;
+}
+
+#db_recommendations,
+#libguides {
+  padding: 1rem 0;
+}
+
+#recs_and_guides .box {
+  display: none;
+}
+
+/* Result boxes */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  flex: 1 1 300px;
+  border: 1px solid #ccc;
+  margin: .5rem;
+  font-size: 90%;
+}
+
+.no-border {
+  border: none;
+  margin: 0;
+}
+
+.box h2 {
+  margin: 0;
+}
+
+h2 img {
+  padding: 0;
+  margin: 0 .25rem;
+  vertical-align: middle;
+}
+
+.box .count {
+  font-weight: bold;
+}
+
+.box p {
+  margin: .5rem 1rem;
+}
+
+.box ol,
+.box ul {
+  padding: 0 1rem;
+  margin: 0 1rem;
+}
+
+.box li {
+  margin-bottom: 1rem;
+  clear: both;
+}
+
+.box li img {
+  float: right;
+  margin: 0 0 .5rem .5rem;
+  max-width: 100px;
+}
+
+
+.box li span.subtext {
+  display: block;
+  font-size: 90%;
+}
+
+.button {
+  display: flex;
+  width: auto;
+  background-color: #ccc;
+  color: #333;
+  text-decoration: none;
+  padding: .25rem .5rem;
+  border-radius: .25rem;
+  clear: both;
+}
+
+.button .icon {
+  flex: 0 0 auto;
+  margin-right: .5rem;
+}
+
+.button .text {
+  flex: 1 1 auto;
+}
+
+.button:hover {
+  filter: brightness(110%);
+}
+
+.searching {
+  display: block;
+  min-height: 32px;
+  line-height: 200%;
+  background-image: url('images/loading.gif');
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+
+/* Colors */
+
+.green {
+  background-color: #8fc5a3;
+}
+
+.teal {
+  background-color: #a4c1c4;
+}
+
+.dark_teal {
+  background-color: #2b637f;
+  color: #fff;
+}
+
+.light_blue {
+  background-color: #cdf;
+}
+
+.orange {
+  background-color: #fdc;
+}
+
+.purple {
+  background-color: #bbb1cf;
+}
+
+.yellow {
+  background-color: #fec;
+}
+
+/* Box order: All */
+
+#books_and_more {
+  order: 1;
+}
+
+#reference {
+  order: 2;
+}
+
+#topic_pages {
+  order: 3;
+}
+
+#scholarly_articles {
+  order: 4;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 900px) {
+  
+  #cocc-main-wrapper {
+    padding: 0;
+  }
+  
+  #library_search_form {
+    margin: 0 .25rem;
+  }
+  
+  #tabs {
+    margin: 1rem .25rem 0 .25rem;
+    border-bottom: none;
+  }
+  
+  #tabs li {
+    margin: 0 .25rem .25rem 0;
+  }
+
+  #tabs li a {
+    background: transparent;
+    border: none;
+    border-bottom-left-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+    font-size: 90%;
+  }
+  
+  .topic {
+    margin: .5rem 0;
+  }
+  
+  .box {
+    margin: .5rem .25rem;
+  }
+  
+  .box li {
+    margin-bottom: .5rem;
+  }
+  
+  /* Box Order: All */
+  #books_and_more {
+    order: 2;
+  }
+
+  #reference {
+    order: 3;
+  }
+
+  #topic_pages {
+    order: 1;
+  }
+  
+}
